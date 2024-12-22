@@ -5,6 +5,11 @@
     --poppins: "Poppins", sans-serif;
 }
 
+html{
+    height: 100vh;
+    overflow: visible;
+}
+
 * {
     font-family: var(--poppins)
 }
@@ -14,9 +19,9 @@
 }
 
 body {
+    height: 100%;
     background: rgb(56, 182, 255);
     background: var(--pb-gradient);
-    overflow: visible;
 }
 
 .container {
@@ -33,10 +38,10 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 18px;
-    width: 50%;
-    padding: 45px;
-    border-radius: 25px;
+    gap: 15px;
+    width: 82%;
+    padding: 25px;
+    border-radius: 20px;
     box-shadow: 13px 13px 75px rgba(46, 42, 42, 0.658);
     transition: all .3s ease-in;
 }
@@ -45,24 +50,36 @@ body {
     color: white;
     font-size: clamp(45px, 3.5vw, 75px);
     font-weight: 900;
-    margin-bottom: 8vh;
-    margin-top: 5vh;
+    margin-bottom:3vh;
+    margin-top: 3vh;
+    text-align: center;
 }
 
 .title {
     color: black;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 800;
     text-align: center;
 }
 
 .text {
-    font-size: 16.5px;
+    font-size: 15px;
     text-align: center;
 }
 
 a {
     color: rgb(56, 182, 255);
+}
+
+.pbcolored {
+    background: rgb(56, 182, 255);
+    background: linear-gradient(90deg, rgba(56, 182, 255, 1) 0%, rgba(255, 189, 89, 1) 74%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .stickybtn {
@@ -86,18 +103,17 @@ a {
     width: 45px;
     position: sticky;
     bottom:20px;
-    left: 15px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
 }
 
 .section {
     margin-bottom: 20px;
     gap: 15px;
-    gap: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -106,8 +122,8 @@ a {
 }
 
 .project {
-    width: 60%;
-    height: 90px;
+    width: 90%;
+    height: 80px;
     background-color: white;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.637);
     border-radius: 20px;
@@ -125,23 +141,30 @@ a {
     transition: all .3s ease-in-out;
 }
 
-
 .projectitle {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .arrow {
     width: 32px;
     margin-left: auto;
-    margin-right: 15px;
-}
-
-#banner {
-    width: 100%;
-    border-radius: 18px;
+    margin-right: 10px;
 }
 
 #handemoji {
     font-size: 60px;
+}
+
+#hello {
+    flex-wrap: nowrap;
+}
+
+#projectimg {
+    width: 80px;
+    margin-right: 10px;
+}
+
+#logo {
+    width: 175px
 }

@@ -5,6 +5,11 @@
     --poppins: "Poppins", sans-serif;
 }
 
+html{
+    height: 100vh;
+    overflow: visible;
+}
+
 * {
     font-family: var(--poppins)
 }
@@ -14,9 +19,9 @@
 }
 
 body {
+    height: 100%;
     background: rgb(56, 182, 255);
     background: var(--pb-gradient);
-    overflow: visible;
 }
 
 .container {
@@ -144,4 +149,29 @@ a {
 
 #handemoji {
     font-size: 60px;
+}
+
+.pbcolored {
+    background: rgb(56, 182, 255);
+    background: linear-gradient(90deg, rgba(56, 182, 255, 1) 0%, rgba(255, 189, 89, 1) 74%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#hello {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#projectimg {
+    width: 80px;
+    margin-right: 20px;
+}
+
+#logo {
+    width: 250px
 }
